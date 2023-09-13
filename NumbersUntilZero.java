@@ -7,12 +7,15 @@ public class NumbersUntilZero {
         int acc = 0;
         int number = scanner.nextInt();
         acc += number;
+        int counter = 0;
         while (number != 0) {
-            System.out.print("Próximo: 1");
+            System.out.print("Próximo: ");
             number = scanner.nextInt();
             acc += number;
+            counter += 1;
         }
-        System.out.println("Valor final: " + acc);
+        double media = acc / counter;
+        System.out.println("Valor final: " + acc + "\nMédia: " + media);
 
         scanner.close();
     }
