@@ -14,8 +14,12 @@ public class NumbersUntilZero {
             acc += number;
             counter += 1;
         }
-        double media = acc / counter;
-        System.out.println("Valor final: " + acc + "\nMédia: " + media);
+        if (counter == 0)   {
+            System.out.println("Nenhum valor foi digitado.");
+        }   else    {
+            double media = acc / counter;
+            System.out.println("Valor final: " + acc + "\nMédia: " + media);
+        }
 
         scanner.close();
     }
